@@ -19,3 +19,88 @@ body{
     50%{background-position: 100% 50%;}
     100%{background-position: 0% 50%;}
 }
+
+.container{
+    position: relative;
+    width: 850px;
+    height: 550px;
+    background: white;
+    border-radius: 30px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .2);
+    margin: 20px;
+    overflow: hidden;
+}
+
+.form-box{
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: white;
+    display: flex;
+    align-items: center;
+    color: black;
+    text-align: center;
+    padding: 40px;
+    z-index: 1;
+    transition: .6s ease-in-out 1.2s,
+    visibility 0s 1s;
+}
+.container.action.form{
+    right: 50%;
+}
+.container.active.form-box.register{
+    visibility: visible;
+}
+.form-box.register{
+    visibility: hidden;
+}
+.form{
+    width: 100%;
+}
+.container.h1{
+    font-size: 36px;
+    margin: -10px 0;
+}
+.input-box{
+    position: relative;
+    margin: 30px 0;
+}
+.input-box input{
+    width: 100%;
+    padding: 13px 50px 13px 20px;
+    background-color: white;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: black;
+    font-weight: 500;
+}
+.input-box input::placeholder{
+    color: grey;
+    font-weight: 400;
+}
+.input-box input::focus{
+    outline: 2px solid rgb(74, 228, 74);
+    box-shadow: 0 0  5px rgba(116, 148,236,0.5);
+    transition: -.1s;
+
+}
+.input-box{
+    color: grey;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translate(-50%);
+    font-size: 20px;
+}
+.forgot.link{
+    margin: -15px 0 15px;
+    color: black;
+    text-decoration: none;
+}
+.btn{
+    width: 100%;
+    height
+}
