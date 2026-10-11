@@ -11,17 +11,22 @@ def products():
     return render_template("products.html")
 
 @app.route("/stock")
-def about():
+def stock():
     return render_template("stock.html")
 
 @app.route("/sales")
-def about():
+def sales():
     return render_template("sales.html")
 
 @app.route("/register")
-def about():
+def register():
     return render_template("register.html")
 
 @app.route("/login")
-def about():
+def login():
     return render_template("login.html")
+
+
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000, debug=True)
