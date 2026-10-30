@@ -1,0 +1,55 @@
+
+{% extends "base.html" %}
+{% block title %}dashboard | Smart Stock{% endblock %}
+{% block content %}
+
+<div class="container-fluid p-4">
+
+    <!-- Dashboard heading -->
+    <div class="mb-4">
+        <h2>Dashboard</h2>
+        <p>Welcome back! Here's what's happening with your stock.</p>
+    </div>
+
+    <!-- Summary cards -->
+    <div class="row g-3">
+
+        <div class="col-md-3">
+            <div class="card shadow-sm p-3">
+                <h6>Total Products</h6>
+                <h3>0</h3>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card shadow-sm p-3">
+                <h6>Total Sales</h6>
+                <h3>0</h3>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card shadow-sm p-3">
+                <h6>Low Stock</h6>
+                <h3>0</h3>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card shadow-sm p-3">
+                <h6>Total Revenue</h6>
+                <h3>KSh 0</h3>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+    <h1>Dashboard</h1>
+
+    <p>Welcome to your stock dashboard.</p>
+
+    <p>View your products and monitor stock levels.</p>
+
+{% endblock %}
