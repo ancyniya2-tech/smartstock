@@ -1,17 +1,95 @@
-
 {% extends "base.html" %}
-{% block title %}dashboard | Smart Stock{% endblock %}
+{% block title %}Dashboard | Smart Stock{% endblock %}
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='dashboard.css') }}">
+{% endblock %}
 {% block content %}
 
 <div class="container-fluid p-4">
+    <div class="side-bar">
+        <div class="logo"></div>
+        <ul class="menu">
+            <li class="active">
+                <a href="">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="fas fa-user"></i>
+                    <span>Profile</span>
+                </a>
+            </li>
+            <li>
+                <a class="nav-link d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                    href="#statisticsMenu" role="button" aria-expanded="false" aria-controls="statisticsMenu">
 
-    <!-- Dashboard heading -->
+                    <span>
+                        <i class="fas fa-chart-bar me-2"></i>
+                        Statistics
+                    </span>
+                    </a>
+    </a>
+                    <div class="collapse" id="statisticsMenu">
+
+                        <a href="" class="nav-link ms-4">
+                            <i class="fas fa-chart-line me-2"></i>
+                            Sales
+                        </a>
+
+                        <a href="" class="nav-link ms-4">
+                            <i class="fas fa-boxes me-2"></i>
+                            Stock
+                        </a>
+
+                    </div>
+            </li>
+            <li>
+                <a href="">
+                    <i class="fas fa-cart-shopping"></i>
+                    <span>Sales management</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="fas  fa-boxes"></i>
+                    <span>Inventory</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="fas fa-question-circle"></i>
+                    <span>FAQs</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="fas fa-cog"></i>
+                    <span>Settings</span>
+                </a>
+            </li>
+            <li class="logout">
+                <a href="">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Logout</span>
+                </a>
+            </li>
+
+
+
+
+        </ul>
+
+    </div>
+
+
     <div class="mb-4">
         <h2>Dashboard</h2>
         <p>Welcome back! Here's what's happening with your stock.</p>
     </div>
 
-    <!-- Summary cards -->
+
     <div class="row g-3">
 
         <div class="col-md-3">
@@ -46,10 +124,6 @@
 
 </div>
 
-    <h1>Dashboard</h1>
 
-    <p>Welcome to your stock dashboard.</p>
-
-    <p>View your products and monitor stock levels.</p>
 
 {% endblock %}

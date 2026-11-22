@@ -5,9 +5,18 @@
     font-family: 'poppins', sans-serif;
 }
 
-body{
+
+body {
+    
     min-height: 100vh;
-    background: linear-gradient(to right, #064e3b, #16a34a, #bbf7d0);
+
+    background: linear-gradient(
+        to right,
+        #064e3b,
+        #16a34a,
+        #bbf7d0
+    );
+
     background-size: 400% 400%;
     animation: gradientBG 15s ease infinite;
 }
